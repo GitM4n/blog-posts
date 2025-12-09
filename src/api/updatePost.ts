@@ -1,11 +1,17 @@
 import { POSTS_API_URL } from '@/lib/constants'
 import type { Post } from '@/types'
 
-export async function getPost(id: string): Promise<Post | undefined> {
+export async function updatePost(post: Post): Promise<Post | undefined> {
   try {
-    const url = new URL(id, POSTS_API_URL)
+    const url = new URL(post.id, POSTS_API_URL)
 
-    const response = await fetch(url)
+    const response = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(post),
+    })
     if (!response.ok) {
       throw new Error(`Something went wrong: ${response.status}, ${response.statusText}`)
     }

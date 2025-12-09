@@ -12,7 +12,11 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     HomeView: typeof import('./src/components/HomeView.vue')['default']
+    IntersectionObserver: typeof import('./src/components/IntersectionObserver.vue')['default']
     PostCard: typeof import('./src/components/PostCard.vue')['default']
+    PostEditModal: typeof import('./src/components/PostFormModal.vue')['default']
+    PostFilters: typeof import('./src/components/PostFilters.vue')['default']
+    PostFormModal: typeof import('./src/components/PostFormModal.vue')['default']
     PostsList: typeof import('./src/components/PostsList.vue')['default']
     PostsListItem: typeof import('./src/components/PostsListItem.vue')['default']
     PostView: typeof import('./src/components/PostView.vue')['default']
@@ -23,7 +27,16 @@ declare module 'vue' {
     UButton: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
     UCard: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Card.vue')['default']
     UContainer: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Container.vue')['default']
+    UContextMenu: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/ContextMenu.vue')['default']
+    UDrawer: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Drawer.vue')['default']
+    UForm: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Form.vue')['default']
+    UFormField: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/FormField.vue')['default']
+    UInput: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Input.vue')['default']
+    UModal: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Modal.vue')['default']
+    URadioGroup: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/RadioGroup.vue')['default']
+    USelect: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Select.vue')['default']
     USkeleton: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Skeleton.vue')['default']
+    UTextarea: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Textarea.vue')['default']
     UTooltip: typeof import('./node_modules/.pnpm/@nuxt+ui@4.2.1_@babel+parser@7.28.5_embla-carousel@8.6.0_typescript@5.9.3_vite@7.2.7_@types+n_7sg27lcjjk6wz645lw4lth744e/node_modules/@nuxt/ui/dist/runtime/components/Tooltip.vue')['default']
   }
 }

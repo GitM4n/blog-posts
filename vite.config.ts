@@ -14,7 +14,7 @@ export default defineConfig({
     ui({
       ui: {
         container: {
-          base: 'max-w-4xl',
+          base: 'max-w-6xl',
         },
       },
     }),

@@ -1,2 +1,5 @@
 export { getPosts } from './getPosts'
 export { getPost } from './getPost'
+export { addPost } from './addPost'
+export { updatePost } from './updatePost'
+export { deletePost } from './deletePost'

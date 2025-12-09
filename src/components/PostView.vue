@@ -18,17 +18,29 @@ onMounted(async () => {
 
 <template>
   <UContainer>
+    <UButton
+      to="/"
+      color="neutral"
+      class="mb-4 py-1.5 rounded-full"
+      leading-icon="heroicons:arrow-left"
+      >Back</UButton
+    >
     <template v-if="isLoading">
-      <USkeleton class="w-full h-20 rounded-xl" />
+      <USkeleton class="w-full h-[50dvh] rounded-xl" />
     </template>
 
     <template v-else-if="post">
       <div class="space-y-5">
         <div class="flex items-center gap-4">
           <UAvatar :src="post.avatar" size="3xl" />
-          <time class="text-xl dark:text-old-neutral-200 text-old-neutral-500 font-mono">{{
-            formatDate(post.createdAt)
-          }}</time>
+          <div>
+            <time class="dark:text-old-neutral-200 text-old-neutral-500 font-mono">{{
+              formatDate(post.createdAt)
+            }}</time>
+            <p class="font-serif font-bold text-3xl dark:text-old-neutral-50 text-old-neutral-950">
+              {{ post.name }}
+            </p>
+          </div>
         </div>
         <h1 class="text-3xl font-bold mb-4">{{ post.title }}</h1>
         <p class="text-lg">{{ post.text }}</p>

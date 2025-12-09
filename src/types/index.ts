@@ -6,3 +6,11 @@ export type Post = {
   text: string
   title: string
 }
+
+export type PostParameters = {
+  searchQuery?: string
+  page?: number
+  limit?: number
+  sortBy?: string,
+  order?:'asc' | 'desc',
+}
