@@ -21,9 +21,9 @@ const isOpened = defineModel({ default: false })
 function validate(state: Partial<Schema>): FormError[] {
   const errors = []
   if (!state.title || state.title.length > 100)
-    errors.push({ name: 'title', message: 'Required, Max length 20' })
+    errors.push({ name: 'title', message: 'Required, Max length 100' })
   if (!state.text || state.text.length > 500)
-    errors.push({ name: 'text', message: 'Required, Max length 50' })
+    errors.push({ name: 'text', message: 'Required, Max length 500' })
   return errors
 }
 
